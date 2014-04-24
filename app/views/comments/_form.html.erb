@@ -1,0 +1,6 @@
+<%= form_for [post, Comment.new] do |f| %>
+  
+  <%= f.text_area :body, placeholder: 'Your comment here.' %>
+  <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+
+<% end %>

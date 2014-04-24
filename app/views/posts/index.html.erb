@@ -1,0 +1,12 @@
+<h1>Posts#index</h1>
+
+<% @posts.each do |post| %>
+  <h1><%= link_to post.title, post, class: 'postlink' %></h1>
+  <p><%= post.body %></p>
+<% end %>
+
+
+<section class="Admin">
+  <%= link_to 'New post', new_post_path %>
+</section>
+
